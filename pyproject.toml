@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "vnaddresscorrector"
+version = "0.1.0"
+description = ""
+authors = ["Ngô Trần Ngọc Sơn <ntns1607@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^2.1.1"
+vietnam-provinces = "^0.5.0"
+rapidfuzz = "^3.1.2"
+python-rapidjson = "^1.10"
+loguru = "^0.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
