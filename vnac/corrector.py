@@ -1,3 +1,4 @@
+import copy
 import re
 from typing import List, Tuple, Union
 
@@ -86,7 +87,7 @@ class AddressCorrector:
     def correct(self, address: Union[Address, str]) -> Address:
         if isinstance(address, str):
             address = Address.from_str(address)
-        corrected_address = address.model_copy(deep=True)
+        corrected_address = copy.deepcopy(address)
 
         if address.province:
             match_province, corrected_province = self.correct_region(address.province.name, self.provinces.keys())
