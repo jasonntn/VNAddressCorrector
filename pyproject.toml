@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vnac"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["Ngô Trần Ngọc Sơn <ntns1607@gmail.com>"]
 readme = "README.md"
